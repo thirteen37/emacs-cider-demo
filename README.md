@@ -36,10 +36,16 @@ The following Emacs packages are installed:
   aka code completion
 * [Rainbow Delimiters](https://github.com/Fanael/rainbow-delimiters) -
   Highlight parenthesis
+* [YASnippet](https://github.com/capitaomorte/yasnippet) -
+  Textmate-style templates
+* [Midje mode](https://github.com/dnaumov/midje-mode) - Integration
+  with Brian Marick's Midje test framework. Currently broken
 
 Nice-to-haves:
 
 * [Magit](http://magit.vc/) - Git interface
+* [Projectile](https://github.com/bbatsov/projectile) - Project file
+  management
 * [ido-ubiquitous](https://github.com/DarwinAwardWinner/ido-ubiquitous) -
   Mini-buffer completion, aka command and file name completion
 * [smex](https://github.com/nonsequitur/smex) - Mini-buffer

@@ -22,11 +22,11 @@ rm -rf emacs-24.5
 # install Java
 add-apt-repository -y ppa:webupd8team/java
 apt-get update
-echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
+/usr/bin/debconf-set-selections <<< "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true"
 apt-get install -y oracle-java8-installer
 
 # install other tools
-apt-get install git silversearcher-ag
+apt-get install -y git silversearcher-ag
 
 su vagrant -c 'mkdir ~/bin'
 
@@ -55,3 +55,6 @@ su vagrant -c '
 /vagrant/install.el
 cat /vagrant/files/.emacs >> ~/.emacs
 '
+
+# clone a project
+su vagrant -c 'git clone https://github.com/pedestal/app-tutorial.git'
